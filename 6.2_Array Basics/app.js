@@ -5,9 +5,7 @@
  of the people. */
 
  let people = ["Greg", "Mary", "Devon", "James"];
-
 people.forEach(p => console.log(p))
-
 
 // 2. Write the command to remove "Greg" from the array.
 people.shift()
