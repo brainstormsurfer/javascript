@@ -1,3 +1,5 @@
+
+
 /*--Delete the wrong answers--
 
 1. Which of the following is/are strings?
