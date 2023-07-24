@@ -30,7 +30,7 @@ const countLetters = (wordsArr) => {
         }
         // (*long live the NEW king)
         mostOccursCharsArr.push(char)                
-     } else if (charCounterObj[char] === maxOccursCharCounter) { /* (*sharing the crown) */    
+     } else if (charCounterObj[char] === maxOccursCharCounter) { // sharing the crown (*few chars w/ most occurrences)
        mostOccursCharsArr.push(char)
      }
      mostAppearancesChar = { [maxOccursCharCounter] : mostOccursCharsArr }
