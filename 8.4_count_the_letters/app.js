@@ -25,9 +25,10 @@ const countLetters = (wordsArr) => {
      if (charCounterObj[char] > maxOccursCharCounter) {
         maxOccursCharCounter = charCounterObj[char]
         // An EXISTING ARRAY with (recent) MAX OCCURRENCES CHARS is getting deleted (/"SHIFTed away") due to a CHAR with MORE OCCURRENCES
-        for (let i = 0 ; i <= mostOccursCharsArr.length ; i++) {         
+        while (mostOccursCharsArr.length > 0) {
             mostOccursCharsArr.shift()
         }
+
         // (*long live the NEW king)
         mostOccursCharsArr.push(char)                
      } else if (charCounterObj[char] === maxOccursCharCounter) { // sharing the crown (*few chars w/ most occurrences)
