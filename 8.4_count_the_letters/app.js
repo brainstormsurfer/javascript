@@ -24,8 +24,8 @@ const countLetters = (wordsArr) => {
   for (const char in charCounterObj) {
      if (charCounterObj[char] > maxOccursCharCounter) {
         maxOccursCharCounter = charCounterObj[char]
-        // AN EXISTING ARRAY WITH (recent) MAX OCCURRENCES CHARS, GETTING DELETED (/"SHIFTED OUT") FOR A CHAR WITH MORE OCCURRENCES
-        for (let i = 0 ; i <= mostOccursCharsArr.length ; i++) {
+        // An EXISTING ARRAY with (recent) MAX OCCURRENCES CHARS is getting DELETED (/"SHIFTED out") for a CHAR with MORE occurrences
+        for (let i = 0 ; i <= mostOccursCharsArr.length ; i++) {         
             mostOccursCharsArr.shift()
         }
         // (*long live the NEW king)
@@ -39,6 +39,6 @@ console.log("Most Occurrences Chars: ", mostAppearancesChar);
   return charCounterObj;
 };
 
-const array = ["Heeelloa la la la", "Good Day", "Your Wellcome", "hhhotdog", "hamburgers"];
+const array = ["Heeello la la laa", "Good Day", "Your Welcome", "hotdog", "hamburgers"];
 
 console.log(countLetters(array));
